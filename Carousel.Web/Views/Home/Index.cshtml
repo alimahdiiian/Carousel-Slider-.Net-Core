@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4 font-weight-bold">Welcome</h1>
+    <p>
+        <button class="btn btn-outline-info" 
+                onclick="return VisitMyWebSite()">
+           Hi,I'm Ali Mahdian.
+        </button>
+    </p>
+    <p>
+        I would like to build  Web apps with .Net core .
+    </p>
+</div>
+
+<div class="mt-5"></div>
+
+<!--Carousel Slider-->
+@await Component.InvokeAsync("SliderComponent")
+<!--end of Carousel Slider-->
+
+

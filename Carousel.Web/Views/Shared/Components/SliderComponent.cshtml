@@ -1,0 +1,49 @@
+﻿@using Carousel.Core.Services.Interfaces
+@using Carousel.DataLayer.Entities.Slider
+
+@inject ISliderService _sliderService
+
+<div class="container border py-2">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            @{
+                List<Slider> sliderList =
+                await _sliderService.GetAllSlidersAsync();
+
+                var i = 0;
+                foreach (var item in sliderList.Where(s =>s.IsActive))
+                {
+                    i++;
+                    var active = 1 == i ? "active" : "";
+                    <div class="carousel-item w-100 slider @active  text-info text-right"
+                         style="background-image:url(/Slider/@item.ImageName);">
+
+                        <div class="sliderfont">
+                            <h5>@item.SliderTitle</h5>
+                            <h4>@item.SliderComment</h4>
+                        </div>
+                    </div>
+
+
+                }
+            }
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<br />
+<div class="mb-5"></div>

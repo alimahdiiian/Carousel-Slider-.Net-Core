@@ -1,0 +1,91 @@
+﻿@page
+@model Carousel.Web.Pages.Admin.Slider.CreateSliderModel
+@{
+    ViewData["Title"] = "Create Slider";
+}
+
+
+
+
+<div class="row">
+    <form method="post" enctype="multipart/form-data">
+        <div class="col-md-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h5 class="font-weight-bold">Create New Slider</h5>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Slider Title</label>
+                        <input type="text" asp-for="Slider.SliderTitle" class="form-control" placeholder="A name for this slider">
+                        <div id="alertCode" class="alert alert-danger" style="display: none">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Url Address</label>
+                        <input type="text" asp-for="Slider.Url" class="form-control" placeholder="after clicking on slider image user will get to this address">
+                        <span class="text-danger" asp-validation-for="Slider.SliderDescription"></span>
+                        <div id="alertCode" class="alert alert-warning">
+                            <p class="hlep-block text-info">URL address should be in the correct format like this: <a href="https://toranjgalerie.ir/ ">https://toranjgalerie.ir/ </a> </p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Slide Description </label>
+                        <textarea class="form-control" asp-for="Slider.SliderDescription" rows="4" required></textarea>
+                        <span class="text-danger" asp-validation-for="Slider.SliderDescription"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Slider Comment </label>
+                        <textarea class="form-control" asp-for="Slider.SliderComment" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Start Date</label>
+                        <input asp-for="Slider.StartDate" id="stDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label>End Date &nbsp;</label>
+                        <input asp-for="Slider.EndDate" id="enDate" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Is Slider Active ?</label>
+                        <input type="checkbox" asp-for="Slider.IsActive" />
+                    </div>
+                </div>
+                <div class="panel-footer text-left">
+                    <i class="fa fa-hand-o-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Choosed image
+                </div>
+                <div class="panel-body">
+                    <img src="/Slider/NoImage.jpg" id="imgPreview"
+                         class="img-thumbnail ml-4 previewimg" />
+
+                </div>
+                <div class="panel-footer">
+                    <label>  Add Slider Image</label>
+                    <input name="sliderImg" type="file" class="form-control mb-2" id="imgUp" required>
+                    <span class="text-danger" asp-validation-for="Slider.ImageName"></span>
+                </div>
+            </div>
+            <div >
+                <p >
+                    <input type="submit" value="Create Slider"
+                           class="btn btn-success form-control" />
+                </p>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<hr />
+<div>
+    <a asp-page="Index" class="btn  btn-outline-info">Back To Sliders List</a>
+</div>
+

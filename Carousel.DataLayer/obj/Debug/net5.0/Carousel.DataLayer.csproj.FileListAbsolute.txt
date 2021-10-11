@@ -1,0 +1,15 @@
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\bin\Debug\net5.0\Carousel.DataLayer.deps.json
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\bin\Debug\net5.0\Carousel.DataLayer.runtimeconfig.json
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\bin\Debug\net5.0\Carousel.DataLayer.runtimeconfig.dev.json
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\bin\Debug\net5.0\Carousel.DataLayer.dll
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\bin\Debug\net5.0\ref\Carousel.DataLayer.dll
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\bin\Debug\net5.0\Carousel.DataLayer.pdb
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.csproj.AssemblyReference.cache
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.AssemblyInfoInputs.cache
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.AssemblyInfo.cs
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.dll
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\ref\Carousel.DataLayer.dll
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.pdb
+C:\Users\alima\source\repos\Carousel\Carousel.DataLayer\obj\Debug\net5.0\Carousel.DataLayer.genruntimeconfig.cache

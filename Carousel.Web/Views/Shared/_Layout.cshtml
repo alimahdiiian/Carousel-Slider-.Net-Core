@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Carousel </title>
+
+    <!--styles-->
+   <partial name="_Styles" />
+
+</head>
+<body>
+    <!--Header-->
+    <partial name="_Header" />
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Carousel.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <!--Scroll to top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"
+            class="ml-2">Top</button>
+
+    <!--Scripts-->
+    <partial name="_Scripts" />
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
